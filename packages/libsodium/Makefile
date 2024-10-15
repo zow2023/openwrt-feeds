@@ -51,7 +51,7 @@ menu "Configuration"
 endmenu
 endef
 
-CONFIGURE_ARGS+= \
+#CONFIGURE_ARGS+= \
 	--disable-ssp \
 	$(if $(CONFIG_LIBSODIUM_MINIMAL),--enable-minimal=yes,--enable-minimal=no)
 
